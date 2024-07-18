@@ -1,11 +1,16 @@
 {
-  "name": "npmjs-dependencies-scraper",
+  "name": "npmjs-dependents-scraper",
   "module": "index.ts",
-  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@std/cli": "npm:@jsr/std__cli"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "jsr": "^0.13.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "type": "module"
 }

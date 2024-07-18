@@ -1,4 +1,4 @@
-# npmjs-dependencies-scraper
+# npmjs dependents scraper
 
 To install dependencies:
 
@@ -6,10 +6,11 @@ To install dependencies:
 bun install
 ```
 
-To run:
+Usage:
 
 ```bash
+bun run index.ts <package-name>
 bun run index.ts <package-name> <output-file>.json
+bun run index.ts <package-name> <output-file>.json --no-trace
+bun run index.ts --help
 ```
-
-This project was created using `bun init` in bun v1.1.20. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
